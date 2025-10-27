@@ -91,7 +91,11 @@ with c2:
         st.write('性别：',gender)
     with a2:
         st.write('学历：',degrees)
-        st.write('语言能力：',language_options)
+        s=''
+        for yuyan in language_options:
+            s=s+yuyan
+        
+        st.write('语言能力：',s)
         st.write('工作经验：',work)
         st.write('期望薪资：',pay)
         st.write('最佳联系时间：',w1)     
@@ -100,4 +104,9 @@ with c2:
 
 
     st.title('专业技能')
-    st.write('',skill_options)
+    w=''
+    for i in skill_options:
+        w=w+i
+         
+    st.write('技能：',w)
+
